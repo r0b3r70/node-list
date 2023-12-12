@@ -1,0 +1,13 @@
+ul {
+    list-style-type: none;    
+}
+
+.checkbox-row {
+    display: block;
+    cursor: pointer;
+    padding: 1px;
+}
+
+.checkbox-row:hover {
+    background-color: #efefef;
+}

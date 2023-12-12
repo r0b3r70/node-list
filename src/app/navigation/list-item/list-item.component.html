@@ -1,0 +1,11 @@
+<div *ngFor="let item of tree">
+    <ul>
+        <li>
+            <label class="checkbox-row">
+                <input type="checkbox" value="{{item.id}}"  (click)="clicked(item.id)"/>
+                {{item.title}} ({{item.id}})
+            </label>
+            <app-list-item *ngIf="item.children" [tree]="item.children"> </app-list-item>
+        </li>
+    </ul>
+</div>
